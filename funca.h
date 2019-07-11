@@ -8,4 +8,5 @@ public:
     FuncA();
 };
 
+
 #endif // FUNCA_H

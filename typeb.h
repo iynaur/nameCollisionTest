@@ -5,13 +5,19 @@
 class TypeA
 {
 public:
-//    TypeA();
+    TypeA(){
+        {
+            std::cerr<<"real type B\n";
+        }
+    }
     char x;
     char y;
     char c[6];
 
     void init()
     {
+        std::cerr<<"real init B\n";
+        std::cerr<<"size of TypeA is "<<sizeof(TypeA)<<'\n';
         x=1;
         y=2;
         for  (char &v : c) v = 0;
